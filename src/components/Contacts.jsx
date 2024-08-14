@@ -60,6 +60,7 @@ const Contacts = () => {
             <h4>Office Address</h4>
             <p>
               Heritage Institute of Technology, Chowbaga Road, Anandapur,
+              <br />
               Kolkata : 700107
             </p>
           </div>
@@ -82,7 +83,7 @@ const Contacts = () => {
           <div className="item">
             <h4>Call Us</h4>
             <p>
-              <a href="tel:+919073558349">Prof. [Dr.] Rajashree Lodh</a>
+              <a href="tel:+918250548932">Prof. [Dr.] Rajashree Lodh</a>
               <br />
               <a href="tel:+919836656484">Prof. [Dr.] Subha Sankar Chowdhury</a>
               <br />

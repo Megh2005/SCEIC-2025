@@ -68,7 +68,7 @@ const Services = () => {
   return (
     <>
       <section className="services container">
-        <h2>WORKSHOP THEMES</h2>
+        <h2>CONFERENCE THEMES</h2>
         <div className="banner">
           {services.map((element) => {
             return (
