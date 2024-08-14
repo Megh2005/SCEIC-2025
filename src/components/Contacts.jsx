@@ -1,28 +1,55 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
-
+import React, { useRef, useState } from "react";
 
 const Contacts = () => {
-  const form = useRef();
+  const [userData, setUserData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+  let name, value;
+  const postUserData = (e) => {
+    name = e.target.name;
+    value = e.target.value;
+    setUserData({ ...userData, [name]: value });
+  };
 
-  const sendEmail = (e) => {
+  const submitData = async (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm("service_j3l4v4q", "template_s0kbq2c", form.current, {
-        publicKey: "cXqHbP6YoiH_kX0dL",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS");
-          alert("We Will Get Back To You Very Soon");
-          const apply = document.getElementById("form");
-          apply.reset();
-        },
-        (error) => {
-          console.log("FAILED", error.text);
+    const { name, email, phone, subject, message } = userData;
+    if (name && email && phone && subject && message) {
+      const res = fetch(
+        "https://sceic-2025-default-rtdb.asia-southeast1.firebasedatabase.app/contactData.json",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            phone,
+            subject,
+            message,
+          }),
         }
       );
+      if (res) {
+        setUserData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
+        alert("Enquiry Submitted Successfully");
+      } else {
+        alert("Failed to submit Enquiry");
+      }
+    } else {
+      alert("All Fields are Mandatory");
+    }
   };
 
   return (
@@ -80,7 +107,7 @@ const Contacts = () => {
             />
           </div>
           <div className="item">
-            <form id="form" ref={form} onSubmit={sendEmail}>
+            <form method="POST" id="form">
               <h2>Contact Us</h2>
               <div>
                 <input
@@ -88,27 +115,47 @@ const Contacts = () => {
                   placeholder="Enter Name"
                   name="name"
                   required
+                  value={userData.name}
+                  onChange={postUserData}
                 />
                 <input
                   type="email"
                   placeholder="Enter Email"
                   name="email"
                   required
+                  value={userData.email}
+                  onChange={postUserData}
                 />
               </div>
+              <input
+                type="number"
+                placeholder="Enter Mobile Number"
+                name="phone"
+                min={1000000000}
+                max={9999999999}
+                required
+                value={userData.phone}
+                onChange={postUserData}
+              />
               <input
                 type="text"
                 placeholder="Enter Subject"
                 name="subject"
                 required
+                value={userData.subject}
+                onChange={postUserData}
               />
               <textarea
                 rows={7}
                 placeholder="Enter Message"
                 name="message"
                 required
+                value={userData.message}
+                onChange={postUserData}
               />
-              <button type="submit">Submit</button>
+              <button onClick={submitData} type="submit">
+                Submit
+              </button>
             </form>
           </div>
         </div>

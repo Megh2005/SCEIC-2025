@@ -80,13 +80,25 @@ const Services = () => {
           })}
         </div>
       </section>
-      <marquee className="default" direction="left" scrollamount="12" behaviour="scroll" loop="3">
+      <marquee
+        className="default"
+        direction="left"
+        scrollamount="12"
+        behaviour="scroll"
+        loop="3"
+      >
         <span>Call For Papers : </span>
         We are inviting all researchers and civil engineering enthusiasts to
-        submit their unique research papers by <span>7th September, 2024</span>.
-        For Guidelines 
+        submit their unique research papers by{" "}
         <span>
-          <a href="https://paper-publication-guidelines.vercel.app/" target="_blank">
+          15 <sup>th</sup> September, 2024
+        </span>
+        . For Guidelines{" "}
+        <span>
+          <a
+            href="https://paper-publication-guidelines.vercel.app/"
+            target="_blank"
+          >
             Click here
           </a>
         </span>
