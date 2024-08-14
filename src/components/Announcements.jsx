@@ -15,15 +15,21 @@ const Announcements = () => {
           <tbody>
             <tr>
               <td>Abstract Submission Deadline</td>
-              <td>7th September, 2024</td>
+              <td>
+                15<sup>th</sup> September, 2024
+              </td>
             </tr>
             <tr>
               <td>Notification of Acceptance of Abstract</td>
-              <td>22nd September, 2024</td>
+              <td>
+                30<sup>th</sup> September, 2024
+              </td>
             </tr>
             <tr>
               <td>Full Paper Submission Deadline</td>
-              <td>15th November, 2024</td>
+              <td>
+                15<sup>th</sup> November, 2024
+              </td>
             </tr>
             <tr>
               <td>Registration Start</td>
@@ -35,7 +41,9 @@ const Announcements = () => {
             </tr>
             <tr>
               <td>SCEIC 2025</td>
-              <td>9th - 10th January 2025</td>
+              <td>
+                16<sup>th</sup> - 17<sup>th</sup> January 2025
+              </td>
             </tr>
           </tbody>
         </table>

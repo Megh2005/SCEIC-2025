@@ -81,13 +81,14 @@ nav .navLinks .links a {
   font-size: 30px;
   font-weight: 900;
   padding-bottom: 3px;
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.25s;
+  color: #2f00ff;
 }
 
 nav .navLinks .links a:hover {
   transition: 0.5s;
   cursor: pointer;
-  color: rgb(48, 22, 196);
+  color: red;
 }
 
 nav .hamburger {

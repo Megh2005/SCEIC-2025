@@ -39,8 +39,8 @@ const Contacts = () => {
           <div className="item">
             <h4>Email Us</h4>
             <p>
-              <a href="mailto:sourav.kar@heritageit.edu">
-                sourav.kar@heritageit.edu
+              <a href="mailto:rajashree.lodh@heritageit.edu">
+                rajashree.lodh@heritageit.edu
               </a>
               <br />
               <a href="mailto:subhasankar.chowdhury@heritageit.edu">
@@ -55,7 +55,7 @@ const Contacts = () => {
           <div className="item">
             <h4>Call Us</h4>
             <p>
-              <a href="tel:+919073558349">Prof. Saurav Kar</a>
+              <a href="tel:+919073558349">Prof. [Dr.] Rajashree Lodh</a>
               <br />
               <a href="tel:+919836656484">Prof. [Dr.] Subha Sankar Chowdhury</a>
               <br />

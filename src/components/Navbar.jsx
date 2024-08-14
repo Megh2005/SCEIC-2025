@@ -11,19 +11,19 @@ const Navbar = () => {
       </div>
       <div className={show ? "navLinks showmenu" : "navLinks"}>
         <div className="links">
-          <Link to="hero" spy={true} smooth={true} duration={1000}>
+          <Link to="hero" spy={true} smooth={true} duration={500}>
             Home
           </Link>
-          <Link to="about" spy={true} smooth={true} duration={1000}>
+          <Link to="about" spy={true} smooth={true} duration={500}>
             About Us
           </Link>
-          <Link to="services" spy={true} smooth={true} duration={1000}>
+          <Link to="services" spy={true} smooth={true} duration={500}>
             Themes
           </Link>
-          <Link to="anouncements" spy={true} smooth={true} duration={1000}>
+          <Link to="anouncements" spy={true} smooth={true} duration={500}>
             Calendar
           </Link>
-          <Link to="contact" spy={true} smooth={true} duration={1000}>
+          <Link to="contact" spy={true} smooth={true} duration={500}>
             Contact Us
           </Link>
         </div>
