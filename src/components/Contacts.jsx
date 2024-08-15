@@ -20,7 +20,7 @@ const Contacts = () => {
     const { name, email, phone, subject, message } = userData;
     if (name && email && phone && subject && message) {
       const res = fetch(
-        "https://sceic-2025-default-rtdb.asia-southeast1.firebasedatabase.app/contactData.json",
+        "https://sceic-hit-2025-default-rtdb.asia-southeast1.firebasedatabase.app/contactData.json",
         {
           method: "POST",
           headers: {
