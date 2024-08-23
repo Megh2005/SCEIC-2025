@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contacts = () => {
   const [userData, setUserData] = useState({
@@ -20,7 +21,7 @@ const Contacts = () => {
     const { name, email, phone, subject, message } = userData;
     if (name && email && phone && subject && message) {
       const res = fetch(
-        "https://sceic-hit-2025-default-rtdb.asia-southeast1.firebasedatabase.app/contactData.json",
+        "https://ncsceic-default-rtdb.firebaseio.com/contactData.json",
         {
           method: "POST",
           headers: {
@@ -67,12 +68,10 @@ const Contacts = () => {
           <div className="item">
             <h4>Email Us</h4>
             <p>
+              <a href="mailto:ncsceic@heritageit.edu">ncsceic@heritageit.edu</a>
+              <br />
               <a href="mailto:rajashree.lodh@heritageit.edu">
                 rajashree.lodh@heritageit.edu
-              </a>
-              <br />
-              <a href="mailto:subhasankar.chowdhury@heritageit.edu">
-                subhasankar.chowdhury@heritageit.edu
               </a>
               <br />
               <a href="mailto:subhasankar.chowdhury@heritageit.edu">
@@ -85,9 +84,7 @@ const Contacts = () => {
             <p>
               <a href="tel:+918250548932">Prof. [Dr.] Rajashree Lodh</a>
               <br />
-              <a href="tel:+919836656484">Prof. [Dr.] Subha Sankar Chowdhury</a>
-              <br />
-              <a href="tel:+918910963192">Prof. [Dr.] Puja Basu Chowdhury</a>
+              <a href="tel:+919674747066">Prof. [Dr.] Puja Basu Chowdhury</a>
             </p>
           </div>
         </div>

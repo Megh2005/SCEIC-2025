@@ -26,6 +26,9 @@ const Navbar = () => {
           <Link to="contact" spy={true} smooth={true} duration={500}>
             Contact Us
           </Link>
+          <a className="log" target="_blank" href="https://heritageit.edu" spy={true} smooth={true} duration={500}>
+            Register
+          </a>
         </div>
       </div>
       <div className="hamburger" onClick={() => setShow(!show)}>

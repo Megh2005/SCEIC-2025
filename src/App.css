@@ -8,6 +8,41 @@
   font-size: 20px;
 }
 
+.log {
+  background-image: linear-gradient(to right, #33ff00 0%, #fffb00 51%, #2b5876 100%);
+  padding: 0 15px;
+  text-align: center;
+  text-transform: capitalize;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  border: 2px solid #000;
+}
+
+.btn-grad {
+  background-image: linear-gradient(to right, #2b5876 0%, #4e4376 51%, #2b5876 100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -438,10 +473,17 @@ footer .banner .tag p {
 }
 
 footer .banner .tag div button {
-  background: #fff7ea;
+  background: blue;
+  color: #fff;
   border: 1px solid #fff7ea;
   padding: 7px 15px;
   border-radius: 8px;
+  transition: ease-in-out all 0.3s;
+}
+
+footer .banner .tag form div button:hover {
+  background: purple;
+  color: #fff;
 }
 
 span,
