@@ -16,7 +16,7 @@ const Announcements = () => {
             <tr>
               <td>Abstract Submission Deadline</td>
               <td>
-                15<sup>th</sup> September, 2024
+                20<sup>th</sup> September, 2024
               </td>
             </tr>
             <tr>
