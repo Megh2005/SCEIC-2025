@@ -10,14 +10,13 @@
 
 .log {
   background-image: linear-gradient(to right, #33ff00 0%, #fffb00 51%, #2b5876 100%);
-  width: fit-content;
-  padding: 0 15px;
+  padding: 0 10px;
+  font-size: 10px;
   text-align: center;
   text-transform: capitalize;
   transition: 0.5s;
   background-size: 200% auto;
   color: blue;
-  box-shadow: 0 0 10px #eee;
   border-radius: 10px;
   display: block;
   border: 2px solid #000;
@@ -25,7 +24,6 @@
 
 .btn-grad:hover {
   background-position: right center;
-  color: #fff;
   text-decoration: none;
 }
 

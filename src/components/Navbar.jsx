@@ -34,7 +34,7 @@ const Navbar = () => {
             smooth={true}
             duration={500}
           >
-            Give Paper
+            Abstract
           </a>
         </div>
       </div>
