@@ -91,14 +91,11 @@ const Services = () => {
         We are inviting all researchers and civil engineering enthusiasts to
         submit their unique research papers by{" "}
         <span>
-          15 <sup>th</sup> September, 2024
+          20 <sup>th</sup> September, 2024
         </span>
-        . For Guidelines{" "}
+        . For submitting abstract{" "}
         <span>
-          <a
-            href="https://paper-publication-guidelines.vercel.app/"
-            target="_blank"
-          >
+          <a href="https://form.jotform.com/242584794523062" target="_blank">
             Click here
           </a>
         </span>
