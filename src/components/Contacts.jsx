@@ -21,7 +21,7 @@ const Contacts = () => {
     const { name, email, phone, subject, message } = userData;
     if (name && email && phone && subject && message) {
       const res = fetch(
-        "https://ncsceic-default-rtdb.firebaseio.com/contactData.json",
+        "https://sceic-2025-hitk-default-rtdb.asia-southeast1.firebasedatabase.app/contact.json",
         {
           method: "POST",
           headers: {

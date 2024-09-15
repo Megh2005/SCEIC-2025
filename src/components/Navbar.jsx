@@ -26,8 +26,15 @@ const Navbar = () => {
           <Link to="contact" spy={true} smooth={true} duration={500}>
             Contact Us
           </Link>
-          <a className="log" target="_blank" href="https://heritageit.edu" spy={true} smooth={true} duration={500}>
-            Register
+          <a
+            className="log"
+            target="_blank"
+            href="https://form.jotform.com/242584794523062"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            Give Paper
           </a>
         </div>
       </div>

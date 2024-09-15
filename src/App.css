@@ -10,6 +10,7 @@
 
 .log {
   background-image: linear-gradient(to right, #33ff00 0%, #fffb00 51%, #2b5876 100%);
+  width: fit-content;
   padding: 0 15px;
   text-align: center;
   text-transform: capitalize;
