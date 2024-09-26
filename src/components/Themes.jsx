@@ -105,9 +105,9 @@ const Services = () => {
       <marquee
         className="default"
         direction="left"
-        scrollamount="10"
+        scrollamount="2"
         behavior="scroll"
-        loop="5"
+        loop="1"
       >
         <span>Call For Papers: </span>
         We are inviting all researchers and civil engineering enthusiasts to
