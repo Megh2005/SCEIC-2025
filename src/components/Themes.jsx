@@ -75,7 +75,7 @@ const Services = () => {
     visible: {
       opacity: 1,
       x: 0,
-      transition: { duration: 5, ease: "easeInOut" },
+      transition: { duration: 2, ease: "easeOut" },
     },
   };
 
