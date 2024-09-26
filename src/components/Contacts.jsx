@@ -70,13 +70,7 @@ const Contacts = () => {
             <p>
               <a href="mailto:ncsceic@heritageit.edu">ncsceic@heritageit.edu</a>
               <br />
-              <a href="mailto:rajashree.lodh@heritageit.edu">
-                rajashree.lodh@heritageit.edu
-              </a>
-              <br />
-              <a href="mailto:subhasankar.chowdhury@heritageit.edu">
-                pujabasu.chaudhury@heritageit.edu
-              </a>
+
             </p>
           </div>
           <div className="item">

@@ -1,4 +1,5 @@
 import React from "react";
+import { motion, useInView } from "framer-motion";
 
 const Services = () => {
   const services = [
@@ -21,7 +22,7 @@ const Services = () => {
     {
       id: 4,
       url: "/4.png",
-      title: " Remote Sensing and Geo informatics ",
+      title: "Remote Sensing and Geo informatics",
     },
     {
       id: 5,
@@ -65,17 +66,38 @@ const Services = () => {
       title: "Case studies for Sustainable Civil Engineering Application.",
     },
   ];
+
+  const fadeInSlide = {
+    hidden: (i) => ({
+      opacity: 0,
+      x: i % 2 === 0 ? -100 : 100, // Slide from left or right based on index
+    }),
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { duration: 5, ease: "easeInOut" },
+    },
+  };
+
   return (
     <>
       <section className="services container">
         <h2>CONFERENCE THEMES</h2>
         <div className="banner">
-          {services.map((element) => {
+          {services.map((element, index) => {
             return (
-              <div className="item" key={element.id}>
+              <motion.div
+                className="item"
+                key={element.id}
+                custom={index} // Pass index for custom animation
+                initial="hidden"
+                whileInView="visible"
+                variants={fadeInSlide}
+                viewport={{ once: false }} // Allows multiple triggers as you scroll
+              >
                 <h3>{element.title}</h3>
                 <img src={element.url} alt={element.title} />
-              </div>
+              </motion.div>
             );
           })}
         </div>
@@ -83,11 +105,11 @@ const Services = () => {
       <marquee
         className="default"
         direction="left"
-        scrollamount="12"
-        behaviour="scroll"
-        loop="3"
+        scrollamount="10"
+        behavior="scroll"
+        loop="5"
       >
-        <span>Call For Papers : </span>
+        <span>Call For Papers: </span>
         We are inviting all researchers and civil engineering enthusiasts to
         submit their unique research papers by{" "}
         <span>
@@ -95,7 +117,11 @@ const Services = () => {
         </span>
         . For submitting abstract{" "}
         <span>
-          <a href="https://form.jotform.com/242584794523062" target="_blank">
+          <a
+            href="https://form.jotform.com/242584794523062"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Click here
           </a>
         </span>
